@@ -38,11 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<h2>Application Received!</h2>";
     echo "<p>Thank you, <strong>$name</strong>, for applying to adopt <strong>$petName</strong>.</p>";
     echo "<p>We will contact you soon at <strong>$email</strong>.</p>";
-    echo "<p>You will be redirected to the <a href='index.php'>homepage</a> in a few seconds...</p>";
+    echo "<p>You will be redirected to the <a href='../index.php'>homepage</a> in a few seconds...</p>";
 
     echo "<script>
         setTimeout(function() {
-            window.location.href = 'index.php';
+            window.location.href = '../index.php';
         }, 7000);
     </script>";
 
@@ -65,10 +65,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="nav-container">
             <div class="logo">
                 <img class="heart-icon" src="../imgs/heart-logo.png" alt="heart-icon">
-                <a href="index.php" class="logo-text">PetFinder</a>
+                <a href="../index.php" class="logo-text">PetFinder</a>
             </div>
             <div class="nav-links">
-                <a href="index.php">Home</a>
+                <a href="../index.php">Home</a>
                 <a href="adopt.php">Adopt</a>
                 <a href="about.php">About</a>
                 <form action="<?php if(isset($_SESSION['name'])) { echo 'logout.php';}else{echo 'login.php';} ?>">
@@ -128,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="../index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
                         <li><a href="adopt.php">Adopt</a></li>
                     </ul>

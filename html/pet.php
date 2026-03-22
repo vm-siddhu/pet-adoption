@@ -17,10 +17,10 @@ session_start();
         <div class="nav-container">
             <div class="logo">
                 <img class="heart-icon" src="../imgs/heart-logo.png" alt="">
-                <a href="index.php" class="logo-text">PetFinder</a>
+                <a href="../index.php" class="logo-text">PetFinder</a>
             </div>
             <div class="nav-links">
-                <a href="index.php">Home</a>
+                <a href="../index.php">Home</a>
                 <a href="adopt.php">Adopt</a>
                 <a href="about.php">About</a>
                 <form action="<?php if(isset($_SESSION['name'])) { echo 'logout.php';}else{echo 'login.php';} ?>">
@@ -85,7 +85,7 @@ session_start();
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="../index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
                         <li><a href="adopt.php">Adopt</a></li>
                     </ul>

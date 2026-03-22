@@ -1,17 +1,14 @@
 <?php
-$host = "localhost:3307";     
-$user = "root";         
-$password = "";          
-$database = "petadoption";  
+
+$host = "sql204.infinityfree.com";     
+$user = "if0_41447937";         
+$password = "nuwUWLREJj";          
+$database = "if0_41447937_petadoption";
 
 
-$conn = mysqli_connect($host, $user , $password,  $database);
+$conn = mysqli_connect($host, $user, $password, $database);
 
-if ($conn) {
-    // echo " Connected successfully!";  
-} else {
-     mysqli_connect_error(); 
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
-
-
 ?>

@@ -50,7 +50,7 @@ session_start();
             $_SESSION['name'] = $name;
             echo "<script>
             alert('Registered successfully')
-            window.location.href = 'index.php'
+            window.location.href = '../index.php'
          </script>";
       }
      }
@@ -73,7 +73,7 @@ session_start();
         <div class="nav-container">
             <div class="logo">
                 <img class="heart-icon" src="../imgs/heart-logo.png" alt="">
-                <a href="index.php" class="logo-text">PetFinder</a>
+                <a href="../index.php" class="logo-text">PetFinder</a>
             </div>
             <button class="mobile-menu-btn">
                 <button class="mobile-menu-btn">
@@ -81,7 +81,7 @@ session_start();
                 </button>
             </button>
             <div class="nav-links">
-                <a href="index.php">Home</a>
+                <a href="../index.php">Home</a>
                 <a href="adopt.php">Adopt</a>
                 <a href="about.php">About</a>
             </div>

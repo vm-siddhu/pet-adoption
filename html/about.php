@@ -32,13 +32,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="nav-container">
             <div class="logo">
                 <img class="heart-icon" src="../imgs/heart-logo.png" alt="">
-                 <a href="index.php" class="logo-text">PetFinder</a>
+                 <a href="../index.php" class="logo-text">PetFinder</a>
             </div>
             <button class="mobile-menu-btn">
                 <img  class="menu" src="../imgs/menu-icon.png" alt="menu">
             </button>
             <div class="nav-links">
-                <a href="index.php">Home</a>
+                <a href="../index.php">Home</a>
                 <a href="adopt.php">Adopt</a>
                 <a href="about.php">About</a>
                 <form action="<?php if(isset($_SESSION['name'])) { echo 'logout.php';}else{echo 'login.php';} ?>">
@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                     <h3>Sarah Johnson</h3>
                     <p class="role">Founder & CEO</p>
                     <p class="bio">With over 15 years of experience in animal welfare, Sarah leads our mission to connect pets with loving homes.</p>
-                </div>
+                </div   >
                 <div class="team-member">
                     <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=2070" alt="Mike Thompson">
                     <h3>Mike Thompson</h3>
@@ -180,7 +180,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="../index.php">Home</a></li>
                         <li><a href="about.php">About Us</a></li>
                         <li><a href="adopt.php">Adopt</a></li>
                     </ul>

@@ -10,21 +10,21 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetFinder - Find Your Forever Friend</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img class="heart-icon" src="../imgs/heart-logo.png" alt="">
+                <img class="heart-icon" src="imgs/heart-logo.png" alt="">
                 <a class="logo-text">PetFinder</a>
             </div>
             <div class="nav-links">
                 <a href="#" class="active">Home</a>
-                <a href="../html/adopt.php">Adopt</a>
-                <a href="../html/about.php">About</a>
-                <form action="<?php if(isset($_SESSION['name'])) { echo 'logout.php';}else{echo 'login.php';} ?>">
+                <a href="html/adopt.php">Adopt</a>
+                <a href="html/about.php">About</a>
+                <form action="<?php if(isset($_SESSION['name'])) { echo 'html/logout.php';}else{echo 'html/login.php';} ?>">
                 <button class="sign-in-btn"><?php echo isset($_SESSION['name']) ? 'Logout' : 'Login'; ?></button>
                 </form>
             </div>
@@ -44,7 +44,7 @@ session_start();
             </div>
         </div>
         <div class="hero-img">
-            <img src="../imgs/img-hero.avif" alt="Dog">
+            <img src="imgs/img-hero.avif" alt="Dog">
         </div>
     </section>
     <section class="featured-pets">
@@ -141,7 +141,7 @@ session_start();
             <div class="footer-grid">
                 <div class="footer-about">
                     <div class="footer-logo">
-                        <img class="heart-icon" src="../imgs/heart-logo.png" alt="">
+                        <img class="heart-icon" src="imgs/heart-logo.png" alt="">
                         <span>PetFinder</span>
                     </div>
                     <p>Making pet adoption easy, accessible, and enjoyable for everyone.</p>
@@ -150,9 +150,9 @@ session_start();
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="adopt.php">Adopt</a></li>
-                        <li><a href="../html/about.php">About Us</a></li>
-                        <li><a href="../html/adopt.php">Adopt</a></li>
+                        <li><a href="html/adopt.php">Adopt</a></li>
+                        <li><a href="html/about.php">About Us</a></li>
+                        <li><a href="html/adopt.php">Adopt</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -179,8 +179,7 @@ session_start();
         </div>
     </footer>
 
-    <script src="../js/script.js"></script>
-    <script src="../js/pet.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 

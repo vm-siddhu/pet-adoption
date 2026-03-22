@@ -38,7 +38,7 @@ if (isset($_POST['login'])) {
                 $_SESSION['name'] = $user['name'];
                 echo "<script>
                alert('Login successfully')
-               window.location.href = 'index.php'
+               window.location.href = '../index.php'
             </script>";
             }else{
                 $loginerr = "Invalid email or password!";
@@ -64,10 +64,10 @@ if (isset($_POST['login'])) {
         <div class="nav-container">
             <div class="logo">
                 <img class="heart-icon" src="../imgs/heart-logo.png" alt="">
-                 <a href="index.php" class="logo-text">PetFinder</a>
+                 <a href="../index.php" class="logo-text">PetFinder</a>
             </div>
             <div class="nav-links">
-                <a href="index.php" class="active">Home</a>
+                <a href="../index.php" class="active">Home</a>
                 <a href="adopt.php">Adopt</a>
                 <a href="about.php">About</a>
             </div>
@@ -76,7 +76,6 @@ if (isset($_POST['login'])) {
 
     <section class="auth-section">
         <div class="container">
-            <div class="auth-container">
                 <div class="auth-box">
                     <h1>Welcome Back</h1>
                     <p class="auth-subtitle">Sign in to continue your pet adoption journey</p>
@@ -109,7 +108,6 @@ if (isset($_POST['login'])) {
                     </p>
                 </div>
             </div>
-        </div>
     </section>
 </body>
 </html>
